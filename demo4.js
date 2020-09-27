@@ -9,3 +9,8 @@ var r = testArray.filter((num) =>  num > 5);
 
 console.log(r);
 console.log(typeof r);
+
+var users = ["vikas", "tarun", "mahesh", "ajay", "vinay"];
+
+console.log(users.slice(1));
+console.log(users.splice(2,3));
