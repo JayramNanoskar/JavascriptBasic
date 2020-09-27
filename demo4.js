@@ -14,3 +14,5 @@ var users = ["vikas", "tarun", "mahesh", "ajay", "vinay"];
 
 console.log(users.slice(1));
 console.log(users.splice(2,3));
+console.log(users);
+console.log(users.sort());
