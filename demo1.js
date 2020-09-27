@@ -1,6 +1,6 @@
-function greeting()
+var greet = function greeting()
 {
     console.log("Welcome");
 }
 
-greeting();
+greet();
