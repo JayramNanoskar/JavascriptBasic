@@ -1,0 +1,60 @@
+.color-hover
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.color-red
+{
+    background-color: red ;
+    padding: 10px;
+    margin: 2px;
+    width: 25px;
+    border: 1px solid gray;
+}
+
+.color-cyan
+{
+    background-color: cyan ;
+    padding: 10px;
+    margin: 2px;
+    width: 25px;
+    border: 1px solid gray;
+}
+
+.color-violet
+{
+    background-color: violet ;
+    padding: 10px;
+    margin: 2px;
+    width: 25px;
+    border: 1px solid gray;
+}
+
+.color-orange
+{
+    background-color: orange ;
+    padding: 10px;
+    margin: 2px;
+    width: 25px;
+    border: 1px solid gray;
+}
+
+.color-pink
+{
+    background-color: pink ;
+    padding: 10px;
+    margin: 2px;
+    width: 25px;
+    border: 1px solid gray;
+}
+
+.center
+{
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    min-height: 50vh;
+    margin: 150px;
+}
