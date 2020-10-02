@@ -4,7 +4,9 @@ var User = function(name, hobbiesCount){
 }
 
 User.prototype.getDetails = function getDetail(){
-    console.log(`${this.name} has ${this.hobbiesCount} hobbies `);
+    if(this.hasOwnProperty("name") && this.hasOwnProperty("hobbiesCount")){
+        console.log(`${this.name} has ${this.hobbiesCount} hobbies `);
+    }
 };
 
 var john = new User('john', 2);
