@@ -20,3 +20,7 @@ var raviInfo = mahendra.getInfo.bind(ravi);
  //borrow method getInfo to object ravi from object mahendra
  //It return reference 
 raviInfo();
+
+mahendra.getInfo.call(ravi);
+//borrow method getInfo to object ravi from object mahendra using call
+//It returns value directly not reference
