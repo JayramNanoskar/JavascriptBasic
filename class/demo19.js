@@ -8,7 +8,7 @@ class User{
         return {name : this.name, email : this.email};
     }
     addHobby(name){
-        this.hobbiesList.add(name);
+        this.hobbiesList.push(name);
     }
     getHobbyList(){
         return this.hobbiesList;
@@ -18,3 +18,5 @@ class User{
 let vicky = new User("Vicky", "vicky@gmail.com");
 console.log(vicky);
 console.log(vicky.getInfo());
+
+module.exports = User
