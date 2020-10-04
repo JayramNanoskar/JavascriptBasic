@@ -18,9 +18,13 @@ class User{
     }
 }
 
-class SubUser extends User{
-    constructor(name, email){
-        super(name, email);
+class SubUser extends User
+{
+    constructor(name, email)
+    {
+        //super(); //It is ok but to get values further need to call parent parameter which is defined in parent as below
+        // otherwise values will be undefined in parent function calls
+        super(name, email); // calling parent parameter constructor from child
     }
     getUserInfo(){
         console.log("I am sub user");
