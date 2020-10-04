@@ -15,6 +15,12 @@ class User{
     }
 }
 
+class SubUser extends User{
+    getUserInfo(){
+        console.log("I am sub user");
+    }
+}
+
 let vicky = new User("Vicky", "vicky@gmail.com");
 
 console.log(vicky);
@@ -24,3 +30,5 @@ console.log(vicky.getHobbyList());
 console.log(vicky.hobbiesList); //undefined - because it is private prop, need to access using getter only
 
 module.exports = User
+module.exports = SubUser
+
