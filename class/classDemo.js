@@ -22,3 +22,4 @@ const peter = new SubUser("Peter", "peter@gmail.com");
 console.log(peter.getUserInfo());
 console.log(peter);
 console.log(peter.getInfo());
+peter.login();
