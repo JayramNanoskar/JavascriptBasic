@@ -29,6 +29,7 @@ const languages  = [
 
 function generateList(){
     const ul = document.querySelector(".list-group");
+    ul.innerHTML = "";
     languages.forEach((language ) => {
 
         const li = document.createElement("li");
@@ -40,7 +41,7 @@ function generateList(){
         const span = document.createElement("span");
         span.classList.add("float-right");
 
-        const spanVal = document.createTextNode(language.name);
+        const spanVal = document.createTextNode(language.first_appeared);
         span.appendChild(spanVal);
 
         li.appendChild(span);
@@ -49,4 +50,11 @@ function generateList(){
     })
 }
 
-generateList();
+//generateList();
+window.addEventListener("load", generateList);
+
+const button = document.querySelector(".sort-btn");
+button.addEventListener("click", () => {
+    languages.sort((a, b) => a.first_appeared - b.first_appeared);
+    generateList();
+})
