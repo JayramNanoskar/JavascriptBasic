@@ -10,6 +10,7 @@ vinay.addHobby("Learning");
 console.log(vinay);
 console.log(vinay.getInfo());
 console.log(vinay.getHobbyList());
+console.log(vinay.hobbiesList); //undefined - because it is private prop, need to access using getter only
 
 let hobbies = vinay.getHobbyList();
 
